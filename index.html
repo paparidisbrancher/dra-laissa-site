@@ -25,403 +25,230 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&amp;family=Roboto:wght@300;400&amp;display=swap">
 <link rel="preload" as="image" href="assets/laissa-01-web.jpg" fetchpriority="high">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Dentist", "@id": "https://paparidisbrancher.github.io/dra-laissa-site/#consultorio", "name": "Dra. Laissa Ribeiro de Paula", "description": "Dra. Laissa Ribeiro de Paula, cirurgiã-dentista em Alpinópolis – MG. Clareamento, limpeza, prótese, implantes, aparelho ortodôntico, canal e restaurações.", "url": "https://paparidisbrancher.github.io/dra-laissa-site/", "image": "https://paparidisbrancher.github.io/dra-laissa-site/assets/og-laissa.jpg", "logo": "https://paparidisbrancher.github.io/dra-laissa-site/assets/marca-laissa.jpg", "telephone": "+55-35-98462-2529", "address": {"@type": "PostalAddress", "streetAddress": "Av. Governador Valadares, 787", "addressLocality": "Alpinópolis", "addressRegion": "MG", "addressCountry": "BR"}, "areaServed": {"@type": "City", "name": "Alpinópolis"}, "availableService": [{"@type": "MedicalProcedure", "name": "Clareamento dental"}, {"@type": "MedicalProcedure", "name": "Limpeza e profilaxia"}, {"@type": "MedicalProcedure", "name": "Prótese dentária"}, {"@type": "MedicalProcedure", "name": "Implantes"}, {"@type": "MedicalProcedure", "name": "Aparelhos ortodônticos"}, {"@type": "MedicalProcedure", "name": "Tratamento de canal"}, {"@type": "MedicalProcedure", "name": "Restaurações"}], "sameAs": ["https://www.instagram.com/laissadepaula/"]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Como solicito uma avaliação?", "acceptedAnswer": {"@type": "Answer", "text": "Envie uma mensagem pelo WhatsApp (35) 98462-2529. A equipe orienta sobre os próximos passos para o agendamento."}}, {"@type": "Question", "name": "Onde é o atendimento?", "acceptedAnswer": {"@type": "Answer", "text": "Na Av. Governador Valadares, 787, em Alpinópolis – MG."}}, {"@type": "Question", "name": "Quais tratamentos são oferecidos?", "acceptedAnswer": {"@type": "Answer", "text": "Os tratamentos divulgados são clareamento dental, limpeza e profilaxia, prótese dentária, implantes, aparelhos ortodônticos, tratamento de canal e restaurações."}}, {"@type": "Question", "name": "Como sei qual tratamento é indicado para mim?", "acceptedAnswer": {"@type": "Answer", "text": "A indicação depende de uma avaliação individual. Converse com a equipe para agendar a sua."}}, {"@type": "Question", "name": "Quais são os valores?", "acceptedAnswer": {"@type": "Answer", "text": "Os valores dependem do planejamento de cada caso. Para mais informações, converse com a equipe pelo WhatsApp."}}]}]}</script>
 <style>
-:root{
-  --marfim:#F7F4EF;--branco:#FFFFFF;--ouro:#B08B47;--ouro-escuro:#765A2B;--ouro-claro:#D4B67E;
-  --grafite:#292723;--texto2:#4A463F;--borda:#DCD5CA;--creme:#EDE8E0;
-  --raio:28px;--gutter:clamp(16px,2vw,20px);
-}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:24px;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--marfim);color:var(--grafite);font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
-img{max-width:100%;height:auto;display:block}
-a{color:var(--ouro-escuro);text-underline-offset:4px}
-h1,h2,h3,p{margin:0}
-h2{font-weight:600;letter-spacing:-0.025em;line-height:1.08;text-wrap:balance}
-:focus-visible{outline:2px solid var(--ouro);outline-offset:3px}
-[hidden]{display:none!important}
-.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(20px,4vw,56px)}
-.banda{margin:0 var(--gutter);border-radius:var(--raio);overflow:hidden}
-.secao{padding:clamp(72px,9vw,120px) 0}
-.olho{font-size:12px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--ouro-escuro)}
-
-/* botões */
-.pilula{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 26px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;transition:background .2s,color .2s,border-color .2s,transform .2s}
-.pilula:active{transform:scale(.98)}
-.pil-ouro{background:var(--ouro-claro);color:var(--grafite)}
-.pil-ouro:hover{background:#E2C894;color:var(--grafite)}
-.pil-escura{background:var(--ouro-escuro);color:var(--branco)}
-.pil-escura:hover{background:#5E4721;color:var(--branco)}
-.pil-contorno{border:1px solid var(--ouro-claro);color:var(--ouro-claro);min-height:42px;padding:0 20px;font-size:14px}
-.pil-contorno:hover{background:var(--ouro-claro);color:var(--grafite)}
-
-/* hero */
-.hero{margin:var(--gutter);background:var(--ouro-escuro);color:var(--branco);position:relative}
-.topo{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px clamp(20px,4vw,48px);position:relative;z-index:3}
-.marca{display:flex;align-items:center;gap:12px;color:var(--branco);text-decoration:none}
-.marca img{width:44px;height:auto}
-.marca b{display:block;font-weight:600;font-size:16px;line-height:1.15;letter-spacing:-0.01em}
-.marca small{display:block;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--ouro-claro);margin-top:3px}
-.nav-pilulas{display:flex;gap:8px}
-.nav-pilulas a{color:var(--branco);text-decoration:none;font-size:14px;padding:8px 16px;border:1px solid rgba(255,255,255,.28);border-radius:999px;transition:background .2s}
-.nav-pilulas a:hover{background:rgba(255,255,255,.12);color:var(--branco)}
-.menu-btn{min-height:44px;padding:0 18px;border-radius:999px;background:transparent;border:1px solid rgba(255,255,255,.4);color:var(--branco);font:600 14px 'Plus Jakarta Sans',sans-serif;cursor:pointer}
-.menu-movel{position:relative;z-index:3;margin:0 clamp(20px,4vw,48px) 8px;padding:8px 20px 20px;background:rgba(41,39,35,.35);border-radius:20px;display:flex;flex-direction:column}
-.menu-movel a:not(.pilula){color:var(--branco);text-decoration:none;font-size:17px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.15)}
-.menu-movel .pilula{margin-top:16px}
-.hero-corpo{display:grid;grid-template-columns:1.08fr .92fr;align-items:end;gap:24px;padding:0 clamp(20px,4vw,48px);min-height:min(640px,78vh)}
-.hero-texto{display:flex;flex-direction:column;gap:24px;align-self:center;padding:32px 0 112px}
-.hero h1{font-size:12px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--ouro-claro);line-height:1.6}
-.hero .titulo{font-size:clamp(42px,5.4vw,74px);font-weight:600;letter-spacing:-0.035em;line-height:1.02;text-wrap:balance}
-.hero .titulo em{font-style:normal;color:var(--ouro-claro)}
-.hero .sub{max-width:44ch;font-size:clamp(16px,1.4vw,18px);color:var(--creme)}
-.hero-foto{position:relative;align-self:end;justify-self:center;width:min(100%,460px)}
-.hero-foto::before{content:"";position:absolute;inset:auto -8% 12% -8%;aspect-ratio:1;border-radius:50%;background:var(--ouro);opacity:.55}
-.hero-foto img{position:relative;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 18%;border-radius:999px 999px 0 0}
-.selo{position:absolute;left:clamp(20px,4vw,48px);bottom:28px;z-index:2;display:flex;align-items:center;gap:12px;font-size:13px;line-height:1.35;color:var(--creme)}
-.selo img{width:40px;height:40px;border-radius:50%;object-fit:cover;object-position:50% 20%;border:2px solid var(--ouro-claro)}
-.selo span.pil{background:var(--branco);color:var(--ouro-escuro);font-weight:600;padding:6px 12px;border-radius:999px;font-size:12px}
-
-/* serviços */
-.cab-centro{text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px;margin-bottom:clamp(40px,6vw,64px)}
-.cab-centro h2{font-size:clamp(34px,4.2vw,54px);color:var(--ouro-escuro)}
-.cab-centro p{max-width:52ch;color:var(--texto2)}
-.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;align-items:start}
-.cards3 article:nth-child(2){margin-top:56px}
-.painel{aspect-ratio:4/5;border-radius:20px;display:grid;place-items:center;position:relative;overflow:hidden}
-.painel svg{width:clamp(72px,8vw,104px);height:auto;stroke-width:1.2;position:relative}
-.painel::before{content:"";position:absolute;width:62%;aspect-ratio:1;border-radius:50%}
-.painel .conta{position:absolute;left:16px;bottom:16px;font-size:12px;font-weight:600;padding:6px 12px;border-radius:999px}
-.p1{background:var(--branco);color:var(--ouro);border:1px solid var(--borda)}
-.p1::before{background:var(--marfim)}
-.p1 .conta{background:var(--marfim);color:var(--ouro-escuro)}
-.p2{background:var(--borda);color:var(--ouro-escuro)}
-.p2::before{background:#E9E3D9}
-.p2 .conta{background:var(--branco);color:var(--ouro-escuro)}
-.p3{background:var(--ouro-escuro);color:var(--ouro-claro)}
-.p3::before{background:#86683A}
-.p3 .conta{background:var(--ouro-claro);color:var(--grafite)}
-.cards3 h3{font-size:19px;font-weight:600;letter-spacing:-0.01em;margin-top:18px}
-.cards3 p{font-size:15px;color:var(--texto2);margin-top:4px}
-.nota{text-align:center;margin-top:clamp(40px,6vw,64px);font-weight:500}
-.nota a{font-weight:600}
-
-/* passos */
-.passos-cab{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:16px 40px;margin-bottom:32px}
-.passos-cab h2{font-size:clamp(30px,3.4vw,44px);margin-top:12px}
-.passos{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;list-style:none;margin:0;padding:0}
-.passo{background:var(--branco);border-radius:20px;padding:24px;min-height:240px;display:flex;flex-direction:column;justify-content:space-between;gap:24px;box-shadow:0 1px 2px rgba(41,39,35,.04),0 12px 32px -18px rgba(41,39,35,.18)}
-.passo .num{font-size:44px;font-weight:600;letter-spacing:-0.04em;line-height:1;color:var(--ouro-escuro)}
-.passo h3{font-size:15px;font-weight:600;margin-top:10px}
-.passo p{font-size:14px;line-height:1.55;color:var(--texto2)}
-.passo-foto{position:relative;border-radius:20px;overflow:hidden;min-height:240px}
-.passo-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 22%}
-.passo-foto span{position:absolute;left:14px;bottom:14px;right:14px;background:var(--branco);border-radius:14px;padding:10px 14px;font-size:13px;line-height:1.35}
-.passo-foto b{display:block;font-size:20px;letter-spacing:-0.02em;color:var(--ouro-escuro)}
-
-/* a doutora */
-.doutora{background:var(--grafite);color:var(--branco)}
-.doutora .cab-centro h2{color:var(--branco)}
-.doutora-grade{display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:clamp(40px,7vw,96px);align-items:center;justify-content:center}
-.arco{padding:14px;border-radius:999px;background:repeating-conic-gradient(from 0deg at 50% 60%,#D4B67E 0deg 7deg,#B08B47 7deg 14deg)}
-.arco img{width:100%;aspect-ratio:3/4.1;object-fit:cover;object-position:50% 22%;border-radius:999px}
-.legenda{text-align:center;margin-top:20px}
-.legenda b{display:block;font-size:18px;font-weight:600}
-.legenda span{font-size:14px;color:var(--ouro-claro)}
-.doutora-texto{display:flex;flex-direction:column;gap:28px}
-.doutora-texto>p{font-size:clamp(17px,1.5vw,20px);line-height:1.65;color:var(--creme);max-width:52ch}
-.fatos{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin:0}
-.fatos div{border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:16px 18px}
-.fatos dt{font-size:11px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--ouro-claro);margin-bottom:6px}
-.fatos dd{margin:0;font-size:15px;line-height:1.45}
-
-/* tratamentos em detalhe */
-.detalhe{background:var(--ouro-escuro);color:var(--branco)}
-.detalhe-grade{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(40px,7vw,88px);align-items:center}
-.oval img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 22%;border-radius:50%}
-.detalhe h2{font-size:clamp(32px,3.8vw,50px);color:var(--ouro-claro)}
-.detalhe .intro{color:var(--creme);margin-top:14px;max-width:48ch}
-.lista{list-style:none;margin:32px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 36px}
-.lista h3{font-size:16px;font-weight:600}
-.lista p{font-size:14px;line-height:1.55;color:var(--creme);margin-top:4px}
-
-/* atendimento */
-.atend-grade{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:40px clamp(40px,7vw,96px);align-items:start}
-.atend-grade h2{font-size:clamp(32px,3.6vw,48px);margin-top:12px}
-.atend-grade>div>p:last-child{margin-top:16px;color:var(--texto2);max-width:40ch}
-.contatos{display:grid;gap:14px;margin:0}
-.contatos div{background:var(--branco);border-radius:20px;padding:20px 24px;display:grid;grid-template-columns:120px 1fr;gap:6px 20px;align-items:baseline}
-.contatos dt{font-size:11px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--ouro-escuro)}
-.contatos dd{margin:0;font-size:17px;line-height:1.5}
-.contatos dd a{display:inline-flex;align-items:center;min-height:40px;color:var(--grafite)}
-.contatos dd a:hover{color:var(--ouro-escuro)}
-.contatos .mapa{font-size:14px;color:var(--ouro-escuro);font-weight:600}
-
-/* faq */
-.faq{max-width:820px;margin:0 auto;display:grid;gap:12px}
-.faq details{background:var(--branco);border-radius:18px;padding:0 24px}
-.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:68px;padding:14px 0;font-size:17px;font-weight:600}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary i{flex:none;width:34px;height:34px;border-radius:50%;background:var(--marfim);color:var(--ouro-escuro);display:grid;place-items:center;font-style:normal;font-size:20px;font-weight:400;transition:transform .2s,background .2s}
-.faq details[open] summary i{transform:rotate(45deg);background:var(--ouro-claro);color:var(--grafite)}
-.faq details p{padding:0 0 22px;max-width:60ch;color:var(--texto2)}
-
-/* fechamento */
-.fecho{background:var(--grafite);color:var(--branco);text-align:center}
-.fecho .wrap{display:flex;flex-direction:column;align-items:center;gap:22px}
-.fecho h2{font-size:clamp(34px,4.4vw,58px);max-width:18ch}
-.fecho h2 em{font-style:normal;color:var(--ouro-claro)}
-.fecho p{color:var(--creme);max-width:42ch;font-size:17px}
-.fecho small{font-size:15px;color:var(--creme)}
-
-/* rodapé */
-footer{padding:clamp(56px,7vw,88px) 0 32px}
-.rod-grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:40px;align-items:start}
-.rod-grade .logo{max-width:280px;mix-blend-mode:multiply}
-.rod-grade p.olho{margin-bottom:8px}
-.rod-grade>div{font-size:15px;display:flex;flex-direction:column;gap:2px}
-.rod-grade a{color:var(--grafite);display:inline-flex;align-items:center;min-height:40px}
-.rod-grade a:hover{color:var(--ouro-escuro)}
-.rod-base{border-top:1px solid var(--borda);margin-top:48px;padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 32px;font-size:13px;color:#5C564D}
-.rod-base a{color:#5C564D}
-
-.barra{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(247,244,239,.96);border-top:1px solid var(--borda)}
-.barra .pilula{width:100%}
-.espaco-barra{height:72px}
-
-@media (max-width:1000px){
-  .passos{grid-template-columns:repeat(2,1fr)}
-}
-@media (max-width:879px){
-  .so-largo{display:none!important}
-  .hero-corpo{grid-template-columns:1fr;min-height:0;gap:8px}
-  .hero-texto{padding:24px 0 8px}
-  .hero-foto{width:min(82%,400px)}
-  .selo{position:static;padding:20px 0 24px;justify-content:center}
-  .cards3{grid-template-columns:1fr;gap:36px}
-  .cards3 article:nth-child(2){margin-top:0}
-  .painel{aspect-ratio:16/10}
-  .doutora-grade,.detalhe-grade,.atend-grade{grid-template-columns:1fr}
-  .arco{max-width:360px;margin:0 auto;width:100%}
-  .oval{max-width:340px;margin:0 auto;width:100%}
-}
-@media (min-width:880px){.so-celular{display:none!important}}
-@media (max-width:560px){
-  .passos{grid-template-columns:1fr}
-  .passo,.passo-foto{min-height:200px}
-  .passo-foto{min-height:340px}
-  .lista{grid-template-columns:1fr}
-  .contatos div{grid-template-columns:1fr}
-}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{margin:0;background:#FFFFFF;color:#292723;font-family:Roboto,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+a{color:#765A2B;text-underline-offset:4px}
+a:hover{color:#292723}
+:focus-visible{outline:2px solid #765A2B;outline-offset:3px}
+summary{list-style:none;cursor:pointer}
+summary::-webkit-details-marker{display:none}
+details[open]>summary [data-ico]{transform:rotate(45deg)}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+[hidden]{display:none!important}
+@media (max-width:879px){.so-largo{display:none!important}}
+@media (min-width:880px){.so-celular{display:none!important}}
+.hv1:hover{color:#765A2B!important}
+.hv2:hover{background:#5E4721!important;color:#FFFFFF!important}
+.hv3:hover{background:#F7F4EF!important;color:#292723!important}
+.hv4:hover{color:#292723!important}
+.hv5:hover{background:#C49D58!important;color:#1C1A17!important}
 </style>
 </head>
 <body>
 
-<div class="hero banda" id="inicio">
-  <header class="topo">
-    <a href="#inicio" class="marca" aria-label="Dra. Laissa Ribeiro de Paula, início">
-      <img src="assets/monograma-claro.png" alt="" width="140" height="125">
-      <span><b>Dra. Laissa Ribeiro de Paula</b><small>Cirurgiã-dentista</small></span>
+<header style="position:sticky;top:0;z-index:20;background:rgba(255,255,255,0.97);border-bottom:1px solid #DCD5CA;">
+  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,48px);min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
+    <a href="#inicio" aria-label="Dra. Laissa Ribeiro de Paula, início" style="display:flex;align-items:center;gap:14px;text-decoration:none;color:#292723;">
+      <span style="display:block;width:50px;height:44px;overflow:hidden;position:relative;flex:none;">
+        <img src="assets/marca-laissa.jpg" alt="" width="855" height="480" style="position:absolute;left:-54px;top:-5px;width:159px;height:89px;max-width:none;mix-blend-mode:multiply;">
+      </span>
+      <span style="display:flex;flex-direction:column;gap:3px;">
+        <span style="font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:400;line-height:1;letter-spacing:0.01em;">Dra. Laissa Ribeiro de Paula</span>
+        <span style="font-size:11px;line-height:1;letter-spacing:0.2em;text-transform:uppercase;color:#765A2B;">Cirurgiã-dentista</span>
+      </span>
     </a>
-    <nav class="nav-pilulas so-largo" aria-label="Principal">
-      <a href="#tratamentos">Tratamentos</a>
-      <a href="#sobre">A doutora</a>
-      <a href="#atendimento">Atendimento</a>
-      <a href="#perguntas">Dúvidas</a>
-    </nav>
-    <a class="pilula pil-contorno so-largo" href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener">Agendar avaliação</a>
-    <button type="button" id="menu-btn" class="menu-btn so-celular" aria-expanded="false" aria-controls="menu-movel">Menu</button>
-  </header>
-  <nav id="menu-movel" class="menu-movel so-celular" aria-label="Principal" hidden>
-    <a href="#tratamentos">Tratamentos</a>
-    <a href="#sobre">A doutora</a>
-    <a href="#atendimento">Atendimento</a>
-    <a href="#perguntas">Dúvidas</a>
-    <a class="pilula pil-ouro" href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener">Agendar avaliação</a>
-  </nav>
-
-  <div class="hero-corpo">
-    <div class="hero-texto">
-      <h1>Dra. Laissa Ribeiro de Paula · Dentista em Alpinópolis&nbsp;–&nbsp;MG</h1>
-      <p class="titulo">Cuidado com o seu sorriso, <em>atenção a você.</em></p>
-      <p class="sub">Atendimento odontológico em Alpinópolis, com escuta, cuidado e planejamento para cada paciente.</p>
-      <div><a class="pilula pil-ouro" href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener">Agendar uma avaliação</a></div>
-    </div>
-    <div class="hero-foto">
-      <img src="assets/laissa-01-web.jpg" alt="Dra. Laissa Ribeiro de Paula sorrindo, com blusa branca e braços cruzados" width="1000" height="1333" fetchpriority="high">
-    </div>
+    <nav class="so-largo" aria-label="Principal" style="display:flex;align-items:center;gap:36px;">
+        <div style="display:flex;gap:28px;">
+          <a href="#sobre" style="color:#292723;text-decoration:none;font-size:15px;padding:8px 0;" class="hv1">A doutora</a>
+          <a href="#tratamentos" style="color:#292723;text-decoration:none;font-size:15px;padding:8px 0;" class="hv1">Tratamentos</a>
+          <a href="#atendimento" style="color:#292723;text-decoration:none;font-size:15px;padding:8px 0;" class="hv1">Atendimento</a>
+        </div>
+        <a href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;min-height:44px;padding:0 22px;background:#765A2B;color:#FFFFFF;text-decoration:none;font-size:14px;font-weight:400;letter-spacing:0.05em;border-radius:2px;transition:background .2s;" class="hv2">Agendar avaliação</a>
+      </nav>
+    <button type="button" id="menu-btn" class="so-celular" aria-expanded="false" aria-controls="menu-movel" style="min-height:44px;min-width:44px;padding:0 16px;background:transparent;border:1px solid #DCD5CA;border-radius:2px;color:#292723;font:400 14px Roboto,sans-serif;letter-spacing:0.04em;cursor:pointer;">Menu</button>
   </div>
-  <p class="selo"><img src="assets/laissa-02-web.jpg" alt="" width="40" height="40" loading="lazy" decoding="async"><span class="pil">Alpinópolis – MG</span><span>Em especialização<br>em Ortodontia</span></p>
-</div>
+  <nav id="menu-movel" class="so-celular" hidden aria-label="Principal" style="border-top:1px solid #DCD5CA;background:#FFFFFF;padding:8px clamp(20px,4vw,48px) 24px;display:flex;flex-direction:column;">
+      <a href="#sobre" style="color:#292723;text-decoration:none;font-size:17px;padding:14px 0;border-bottom:1px solid #DCD5CA;">A doutora</a>
+      <a href="#tratamentos" style="color:#292723;text-decoration:none;font-size:17px;padding:14px 0;border-bottom:1px solid #DCD5CA;">Tratamentos</a>
+      <a href="#atendimento" style="color:#292723;text-decoration:none;font-size:17px;padding:14px 0;border-bottom:1px solid #DCD5CA;">Atendimento</a>
+      <a href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener" style="margin-top:20px;display:flex;align-items:center;justify-content:center;min-height:52px;background:#765A2B;color:#FFFFFF;text-decoration:none;font-size:15px;font-weight:400;letter-spacing:0.05em;border-radius:2px;">Agendar avaliação</a>
+    </nav>
+</header>
 
 <main>
-  <section id="tratamentos" class="secao" aria-labelledby="t-trat">
-    <div class="wrap">
-      <div class="cab-centro">
-        <p class="olho">Tratamentos</p>
-        <h2 id="t-trat">Da prevenção à reabilitação</h2>
-        <p>Estes são os tratamentos divulgados pela Dra. Laissa. A indicação de cada um depende de uma avaliação individual.</p>
-      </div>
-      <div class="cards3">
-        <article>
-          <div class="painel p1" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2zm0 -12a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2zm-7 12a6 6 0 0 1 6 -6a6 6 0 0 1 -6 -6a6 6 0 0 1 -6 6a6 6 0 0 1 6 6z"/></svg>
-            <span class="conta">2 tratamentos</span>
-          </div>
-          <h3>Estética e prevenção</h3>
-          <p>Clareamento dental, limpeza e profilaxia</p>
-        </article>
-        <article>
-          <div class="painel p2" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5.5c-1.074 -.586 -2.583 -1.5 -4 -1.5c-2.1 0 -4 1.247 -4 5c0 4.899 1.056 8.41 2.671 10.537c.573 .756 1.97 .521 2.567 -.236c.398 -.505 .819 -1.439 1.262 -2.801c.292 -.771 .892 -1.504 1.5 -1.5c.602 0 1.21 .737 1.5 1.5c.443 1.362 .864 2.295 1.262 2.8c.597 .759 2 .993 2.567 .237c1.615 -2.127 2.671 -5.637 2.671 -10.537c0 -3.74 -1.908 -5 -4 -5c-1.423 0 -2.92 .911 -4 1.5z" /><path d="M12 5.5l1 2.5l-2 2l2 2" /></svg>
-            <span class="conta">4 tratamentos</span>
-          </div>
-          <h3>Reabilitação</h3>
-          <p>Prótese dentária, implantes, tratamento de canal e restaurações</p>
-        </article>
-        <article>
-          <div class="painel p3" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5.5c-1.074 -.586 -2.583 -1.5 -4 -1.5c-2.1 0 -4 1.247 -4 5c0 4.899 1.056 8.41 2.671 10.537c.573 .756 1.97 .521 2.567 -.236c.398 -.505 .819 -1.439 1.262 -2.801c.292 -.771 .892 -1.504 1.5 -1.5c.602 0 1.21 .737 1.5 1.5c.443 1.362 .864 2.295 1.262 2.8c.597 .759 2 .993 2.567 .237c1.615 -2.127 2.671 -5.637 2.671 -10.537c0 -3.74 -1.908 -5 -4 -5c-1.423 0 -2.92 .911 -4 1.5z"/><path d="M12 5.5l3 1.5"/></svg>
-            <span class="conta">Em especialização</span>
-          </div>
-          <h3>Ortodontia</h3>
-          <p>Aparelhos ortodônticos, com acompanhamento periódico</p>
-        </article>
-      </div>
-      <p class="nota">Não sabe qual tratamento procurar? <a href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener">Agende uma avaliação</a>, o primeiro passo.</p>
-    </div>
-  </section>
-
-  <section id="como-comeca" class="secao" style="padding-top:0" aria-labelledby="t-passos">
-    <div class="wrap">
-      <div class="passos-cab">
-        <div><p class="olho">Primeira consulta</p><h2 id="t-passos">Como começa o atendimento</h2></div>
-      </div>
-      <ol class="passos">
-        <li class="passo"><div><span class="num">01</span><h3>Entre em contato</h3></div><p>Envie uma mensagem pelo WhatsApp (35) 98462-2529.</p></li>
-        <li class="passo-foto"><img src="assets/laissa-04-web.jpg" alt="Dra. Laissa sentada em uma poltrona, com colete azul-marinho" width="600" height="900" loading="lazy" decoding="async"><span><b>Avaliação</b>individual, antes de qualquer tratamento</span></li>
-        <li class="passo"><div><span class="num">02</span><h3>Solicite uma avaliação</h3></div><p>Combine com a equipe um horário para a consulta de avaliação.</p></li>
-        <li class="passo"><div><span class="num">03</span><h3>Converse sobre o planejamento</h3></div><p>Na consulta, a avaliação orienta as possibilidades de tratamento e as próximas etapas.</p></li>
-      </ol>
-    </div>
-  </section>
-
-  <section id="sobre" class="doutora banda secao" aria-labelledby="t-sobre">
-    <div class="wrap">
-      <div class="cab-centro">
-        <p class="olho" style="color:var(--ouro-claro)">A doutora</p>
-        <h2 id="t-sobre">Cuidar do sorriso começa por ouvir</h2>
-      </div>
-      <div class="doutora-grade">
-        <figure style="margin:0">
-          <div class="arco"><img src="assets/laissa-02-web.jpg" alt="Dra. Laissa sentada, com colete azul-marinho e blusa branca, sorrindo" width="1000" height="1333" loading="lazy" decoding="async"></div>
-          <figcaption class="legenda"><b>Dra. Laissa Ribeiro de Paula</b><span>Cirurgiã-dentista</span></figcaption>
-        </figure>
-        <div class="doutora-texto">
-          <p>Sou Laissa Ribeiro de Paula, cirurgiã-dentista, em especialização em Ortodontia. Acredito que cuidar do sorriso começa por ouvir cada paciente. Meu compromisso é oferecer atenção e planejamento individualizado, priorizando a saúde bucal e o conforto em cada etapa.</p>
-          <dl class="fatos">
-            <div><dt>Atuação</dt><dd>Cirurgiã-dentista</dd></div>
-            <div><dt>Formação</dt><dd>Em especialização em Ortodontia</dd></div>
-            <div><dt>Atendimento</dt><dd>Alpinópolis – MG</dd></div>
-          </dl>
-          <div><a class="pilula pil-ouro" href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener">Conversar pelo WhatsApp</a></div>
+  <section id="inicio" data-screen-label="01 Abertura" style="background:#FFFFFF;">
+    <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));align-items:center;">
+      <div style="padding:clamp(48px,8vw,112px) clamp(20px,5vw,72px);display:flex;flex-direction:column;gap:28px;">
+        <h1 style="margin:0;font-size:12px;font-weight:400;letter-spacing:0.22em;text-transform:uppercase;color:#765A2B;line-height:1.6;">Dra. Laissa Ribeiro de Paula · Dentista em Alpinópolis&nbsp;–&nbsp;MG</h1>
+        <p style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(40px,4.4vw,62px);line-height:1.1;letter-spacing:-0.005em;color:#292723;text-wrap:balance;">Cuidado com o seu sorriso, <em style="color:#765A2B;font-style:italic;">atenção a você.</em></p>
+        <p style="margin:0;max-width:42ch;font-size:clamp(17px,1.5vw,19px);line-height:1.6;font-weight:300;color:#292723;text-wrap:pretty;">Atendimento odontológico em Alpinópolis, com escuta, cuidado e planejamento para cada paciente.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;">
+          <a href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 30px;background:#765A2B;color:#FFFFFF;text-decoration:none;font-size:15px;font-weight:400;letter-spacing:0.05em;border-radius:2px;transition:background .2s;" class="hv2">Agendar uma avaliação</a>
+          <a href="#tratamentos" style="display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 30px;border:1px solid #B08B47;color:#292723;text-decoration:none;font-size:15px;font-weight:400;letter-spacing:0.05em;border-radius:2px;transition:background .2s;" class="hv3">Conheça os tratamentos</a>
         </div>
+        <p style="margin:8px 0 0;display:flex;align-items:center;gap:14px;font-size:14px;letter-spacing:0.08em;color:#292723;"><span aria-hidden="true" style="display:block;width:32px;height:1px;background:#B08B47;"></span>Alpinópolis – MG</p>
+      </div>
+      <div style="align-self:stretch;background:#F7F4EF;">
+        <img src="assets/laissa-01-web.jpg" alt="Dra. Laissa Ribeiro de Paula sorrindo, com blusa branca e braços cruzados" width="1000" height="1333" fetchpriority="high" style="display:block;width:100%;height:100%;aspect-ratio:4/5;max-height:min(880px,92vh);object-fit:cover;object-position:50% 18%;">
       </div>
     </div>
   </section>
 
-  <section class="detalhe banda secao" style="margin-top:var(--gutter)" aria-labelledby="t-detalhe">
-    <div class="wrap detalhe-grade">
-      <div class="oval"><img src="assets/laissa-03-web.jpg" alt="Retrato da Dra. Laissa com blusa escura e a mão próxima ao rosto" width="1000" height="1333" loading="lazy" decoding="async"></div>
-      <div>
-        <h2 id="t-detalhe">Cada tratamento,<br>planejado para você</h2>
-        <p class="intro">Conheça o que envolve cada tratamento. A indicação é definida na consulta de avaliação.</p>
-        <ul class="lista">
-          <li><h3>Clareamento dental</h3><p>Procedimento para clarear a tonalidade dos dentes, realizado após avaliação da saúde bucal e das expectativas de cada paciente.</p></li>
-          <li><h3>Limpeza e profilaxia</h3><p>Remoção de placa bacteriana e tártaro, com orientações de higiene para a prevenção no dia a dia.</p></li>
-          <li><h3>Prótese dentária</h3><p>Reposição de dentes ausentes ou muito desgastados, buscando recuperar a função mastigatória e o conforto.</p></li>
-          <li><h3>Implantes</h3><p>Alternativa para substituir dentes perdidos, com indicação definida a partir de avaliação clínica e exames.</p></li>
-          <li><h3>Aparelhos ortodônticos</h3><p>Correção do posicionamento dos dentes e da mordida, com acompanhamento periódico ao longo do tratamento.</p></li>
-          <li><h3>Tratamento de canal</h3><p>Tratamento da parte interna do dente quando a polpa está comprometida, com o objetivo de preservar o dente natural.</p></li>
-          <li><h3>Restaurações</h3><p>Reparo de dentes afetados por cárie, fraturas ou desgaste, recuperando forma e função.</p></li>
-        </ul>
+  <section id="sobre" data-screen-label="02 A doutora" style="background:#F7F4EF;padding:clamp(72px,10vw,136px) clamp(20px,5vw,72px);">
+    <div style="max-width:1136px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:clamp(40px,7vw,104px);align-items:center;">
+      <img src="assets/laissa-02-web.jpg" alt="Dra. Laissa sentada, com colete azul-marinho e blusa branca, sorrindo" width="1000" height="1333" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:50% 25%;">
+      <div style="display:flex;flex-direction:column;gap:28px;">
+        <p style="margin:0;font-size:12px;letter-spacing:0.22em;text-transform:uppercase;color:#765A2B;">A doutora</p>
+        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(32px,3.2vw,46px);line-height:1.15;color:#292723;">Cuidar do sorriso começa por ouvir</h2>
+        <p style="margin:0;max-width:52ch;font-size:clamp(17px,1.4vw,19px);line-height:1.7;font-weight:300;color:#292723;text-wrap:pretty;">Sou Laissa Ribeiro de Paula, cirurgiã-dentista, em especialização em Ortodontia. Acredito que cuidar do sorriso começa por ouvir cada paciente. Meu compromisso é oferecer atenção e planejamento individualizado, priorizando a saúde bucal e o conforto em cada etapa.</p>
+        <dl style="margin:12px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:24px;">
+          <div style="border-top:1px solid #B08B47;padding-top:14px;"><dt style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#765A2B;margin-bottom:6px;">Atuação</dt><dd style="margin:0;font-size:16px;line-height:1.45;">Cirurgiã-dentista</dd></div>
+          <div style="border-top:1px solid #B08B47;padding-top:14px;"><dt style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#765A2B;margin-bottom:6px;">Formação</dt><dd style="margin:0;font-size:16px;line-height:1.45;">Em especialização em Ortodontia</dd></div>
+          <div style="border-top:1px solid #B08B47;padding-top:14px;"><dt style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#765A2B;margin-bottom:6px;">Atendimento</dt><dd style="margin:0;font-size:16px;line-height:1.45;">Alpinópolis – MG</dd></div>
+        </dl>
       </div>
     </div>
   </section>
 
-  <section id="atendimento" class="secao" aria-labelledby="t-atend">
-    <div class="wrap atend-grade">
-      <div>
-        <p class="olho">Atendimento</p>
-        <h2 id="t-atend">Atendimento em Alpinópolis</h2>
-        <p>Horários e demais informações são combinados diretamente pelo WhatsApp.</p>
+  <section id="tratamentos" data-screen-label="03 Tratamentos" style="background:#FFFFFF;padding:clamp(72px,10vw,136px) clamp(20px,5vw,72px);">
+    <div style="max-width:1136px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(40px,6vw,72px);">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:24px 64px;align-items:end;">
+        <div style="display:flex;flex-direction:column;gap:20px;">
+          <p style="margin:0;font-size:12px;letter-spacing:0.22em;text-transform:uppercase;color:#765A2B;">Tratamentos</p>
+          <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(32px,3.2vw,46px);line-height:1.15;color:#292723;">Da prevenção à reabilitação</h2>
+        </div>
+        <p style="margin:0;max-width:46ch;font-size:17px;line-height:1.65;font-weight:300;color:#292723;text-wrap:pretty;">Estes são os tratamentos divulgados pela Dra. Laissa. A indicação de cada um depende de uma avaliação individual.</p>
       </div>
-      <dl class="contatos">
-        <div><dt>Endereço</dt><dd>Av. Governador Valadares, 787<br>Alpinópolis – MG<br><a class="mapa" href="https://www.google.com/maps/search/?api=1&amp;query=Av.%20Governador%20Valadares%2C%20787%2C%20Alpin%C3%B3polis%20-%20MG" target="_blank" rel="noopener">Abrir no Google Maps ↗</a></dd></div>
-        <div><dt>WhatsApp</dt><dd><a href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener">(35) 98462-2529</a></dd></div>
-        <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/laissadepaula/" target="_blank" rel="noopener">@laissadepaula</a></dd></div>
+      <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:48px 40px;">
+        <li style="border-top:1px solid #DCD5CA;padding-top:24px;display:flex;flex-direction:column;gap:12px;"><span aria-hidden="true" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#B08B47;">01</span><h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:25px;line-height:1.15;">Clareamento dental</h3><p style="margin:0;font-size:16px;line-height:1.6;color:#4A463F;">Procedimento para clarear a tonalidade dos dentes, realizado após avaliação da saúde bucal e das expectativas de cada paciente.</p></li>
+        <li style="border-top:1px solid #DCD5CA;padding-top:24px;display:flex;flex-direction:column;gap:12px;"><span aria-hidden="true" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#B08B47;">02</span><h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:25px;line-height:1.15;">Limpeza e profilaxia</h3><p style="margin:0;font-size:16px;line-height:1.6;color:#4A463F;">Remoção de placa bacteriana e tártaro, com orientações de higiene para a prevenção no dia a dia.</p></li>
+        <li style="border-top:1px solid #DCD5CA;padding-top:24px;display:flex;flex-direction:column;gap:12px;"><span aria-hidden="true" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#B08B47;">03</span><h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:25px;line-height:1.15;">Prótese dentária</h3><p style="margin:0;font-size:16px;line-height:1.6;color:#4A463F;">Reposição de dentes ausentes ou muito desgastados, buscando recuperar a função mastigatória e o conforto.</p></li>
+        <li style="border-top:1px solid #DCD5CA;padding-top:24px;display:flex;flex-direction:column;gap:12px;"><span aria-hidden="true" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#B08B47;">04</span><h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:25px;line-height:1.15;">Implantes</h3><p style="margin:0;font-size:16px;line-height:1.6;color:#4A463F;">Alternativa para substituir dentes perdidos, com indicação definida a partir de avaliação clínica e exames.</p></li>
+        <li style="border-top:1px solid #DCD5CA;padding-top:24px;display:flex;flex-direction:column;gap:12px;"><span aria-hidden="true" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#B08B47;">05</span><h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:25px;line-height:1.15;">Aparelhos ortodônticos</h3><p style="margin:0;font-size:16px;line-height:1.6;color:#4A463F;">Correção do posicionamento dos dentes e da mordida, com acompanhamento periódico ao longo do tratamento.</p></li>
+        <li style="border-top:1px solid #DCD5CA;padding-top:24px;display:flex;flex-direction:column;gap:12px;"><span aria-hidden="true" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#B08B47;">06</span><h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:25px;line-height:1.15;">Tratamento de canal</h3><p style="margin:0;font-size:16px;line-height:1.6;color:#4A463F;">Tratamento da parte interna do dente quando a polpa está comprometida, com o objetivo de preservar o dente natural.</p></li>
+        <li style="border-top:1px solid #DCD5CA;padding-top:24px;display:flex;flex-direction:column;gap:12px;"><span aria-hidden="true" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#B08B47;">07</span><h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:25px;line-height:1.15;">Restaurações</h3><p style="margin:0;font-size:16px;line-height:1.6;color:#4A463F;">Reparo de dentes afetados por cárie, fraturas ou desgaste, recuperando forma e função.</p></li>
+        <li style="border-top:1px solid #B08B47;padding-top:24px;display:flex;flex-direction:column;gap:16px;align-items:flex-start;"><p style="margin:0;font-size:17px;line-height:1.55;font-weight:300;max-width:30ch;">Não sabe qual tratamento procurar? A avaliação é o primeiro passo.</p><a href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;min-height:44px;color:#765A2B;font-size:15px;font-weight:400;letter-spacing:0.05em;text-decoration:underline;text-underline-offset:6px;" class="hv4">Agendar uma avaliação <span aria-hidden="true">→</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="como-comeca" data-screen-label="04 Como começa" style="background:#F7F4EF;padding:clamp(72px,10vw,136px) clamp(20px,5vw,72px);">
+    <div style="max-width:1136px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(40px,6vw,64px);">
+      <div style="display:flex;flex-direction:column;gap:20px;">
+        <p style="margin:0;font-size:12px;letter-spacing:0.22em;text-transform:uppercase;color:#765A2B;">Primeira consulta</p>
+        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(32px,3.2vw,46px);line-height:1.15;color:#292723;">Como começa o atendimento</h2>
+      </div>
+      <ol style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:40px;">
+        <li style="display:flex;flex-direction:column;gap:14px;"><span aria-hidden="true" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:42px;line-height:1;color:#B08B47;">1</span><h3 style="margin:0;font-size:18px;font-weight:400;">Entre em contato</h3><p style="margin:0;font-size:16px;line-height:1.6;color:#4A463F;max-width:34ch;">Envie uma mensagem pelo WhatsApp (35) 98462-2529.</p></li>
+        <li style="display:flex;flex-direction:column;gap:14px;"><span aria-hidden="true" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:42px;line-height:1;color:#B08B47;">2</span><h3 style="margin:0;font-size:18px;font-weight:400;">Solicite uma avaliação</h3><p style="margin:0;font-size:16px;line-height:1.6;color:#4A463F;max-width:34ch;">Combine com a equipe um horário para a consulta de avaliação.</p></li>
+        <li style="display:flex;flex-direction:column;gap:14px;"><span aria-hidden="true" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:42px;line-height:1;color:#B08B47;">3</span><h3 style="margin:0;font-size:18px;font-weight:400;">Converse sobre o planejamento</h3><p style="margin:0;font-size:16px;line-height:1.6;color:#4A463F;max-width:34ch;">Na consulta, a avaliação orienta as possibilidades de tratamento e as próximas etapas.</p></li>
+      </ol>
+      <div><a href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 30px;background:#765A2B;color:#FFFFFF;text-decoration:none;font-size:15px;font-weight:400;letter-spacing:0.05em;border-radius:2px;transition:background .2s;" class="hv2">Conversar pelo WhatsApp</a></div>
+    </div>
+  </section>
+
+  <section id="atendimento" data-screen-label="05 Atendimento" style="background:#FFFFFF;padding:clamp(72px,10vw,136px) clamp(20px,5vw,72px);">
+    <div style="max-width:1136px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:48px clamp(40px,7vw,104px);">
+      <div style="display:flex;flex-direction:column;gap:20px;">
+        <p style="margin:0;font-size:12px;letter-spacing:0.22em;text-transform:uppercase;color:#765A2B;">Atendimento</p>
+        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(32px,3.2vw,46px);line-height:1.15;color:#292723;">Atendimento em Alpinópolis</h2>
+        <p style="margin:0;max-width:40ch;font-size:17px;line-height:1.65;font-weight:300;">Horários e demais informações são combinados diretamente pelo WhatsApp.</p>
+      </div>
+      <dl style="margin:0;display:flex;flex-direction:column;">
+        <div style="border-top:1px solid #DCD5CA;padding:22px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px 24px;">
+          <dt style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#765A2B;padding-top:4px;">Endereço</dt>
+          <dd style="margin:0;display:flex;flex-direction:column;gap:8px;font-size:17px;line-height:1.5;"><span>Av. Governador Valadares, 787<br>Alpinópolis – MG</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Av.%20Governador%20Valadares%2C%20787%2C%20Alpin%C3%B3polis%20-%20MG" target="_blank" rel="noopener" style="font-size:15px;color:#765A2B;display:inline-flex;align-items:center;min-height:44px;" class="hv4">Abrir no Google Maps ↗</a></dd>
+        </div>
+        <div style="border-top:1px solid #DCD5CA;padding:22px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px 24px;">
+          <dt style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#765A2B;padding-top:4px;">WhatsApp</dt>
+          <dd style="margin:0;font-size:17px;line-height:1.5;"><a href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener" style="color:#292723;display:inline-flex;align-items:center;min-height:44px;" class="hv1">(35) 98462-2529</a></dd>
+        </div>
+        <div style="border-top:1px solid #DCD5CA;border-bottom:1px solid #DCD5CA;padding:22px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px 24px;">
+          <dt style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#765A2B;padding-top:4px;">Instagram</dt>
+          <dd style="margin:0;font-size:17px;line-height:1.5;"><a href="https://www.instagram.com/laissadepaula/" target="_blank" rel="noopener" style="color:#292723;display:inline-flex;align-items:center;min-height:44px;" class="hv1">@laissadepaula</a></dd>
+        </div>
       </dl>
     </div>
   </section>
 
-  <section id="perguntas" class="secao" style="padding-top:0" aria-labelledby="t-faq">
-    <div class="wrap">
-      <div class="cab-centro">
-        <p class="olho">Dúvidas</p>
-        <h2 id="t-faq">Perguntas frequentes</h2>
+  <section id="perguntas" data-screen-label="06 Perguntas" style="background:#F7F4EF;padding:clamp(72px,10vw,136px) clamp(20px,5vw,72px);">
+    <div style="max-width:1136px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:40px clamp(40px,7vw,104px);align-items:start;">
+      <div style="display:flex;flex-direction:column;gap:20px;">
+        <p style="margin:0;font-size:12px;letter-spacing:0.22em;text-transform:uppercase;color:#765A2B;">Dúvidas</p>
+        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(32px,3.2vw,46px);line-height:1.15;color:#292723;">Perguntas frequentes</h2>
       </div>
-      <div class="faq">
-        <details><summary>Como solicito uma avaliação?<i aria-hidden="true">+</i></summary><p>Envie uma mensagem pelo WhatsApp <a href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener">(35) 98462-2529</a>. A equipe orienta sobre os próximos passos para o agendamento.</p></details>
-        <details><summary>Onde é o atendimento?<i aria-hidden="true">+</i></summary><p>Na Av. Governador Valadares, 787, em Alpinópolis – MG.</p></details>
-        <details><summary>Quais tratamentos são oferecidos?<i aria-hidden="true">+</i></summary><p>Os tratamentos divulgados são clareamento dental, limpeza e profilaxia, prótese dentária, implantes, aparelhos ortodônticos, tratamento de canal e restaurações.</p></details>
-        <details><summary>Como sei qual tratamento é indicado para mim?<i aria-hidden="true">+</i></summary><p>A indicação depende de uma avaliação individual. Converse com a equipe para agendar a sua.</p></details>
-        <details><summary>Quais são os valores?<i aria-hidden="true">+</i></summary><p>Os valores dependem do planejamento de cada caso. Para mais informações, converse com a equipe pelo WhatsApp.</p></details>
+      <div style="display:flex;flex-direction:column;border-top:1px solid #DCD5CA;">
+        <details style="border-bottom:1px solid #DCD5CA;">
+          <summary style="display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:64px;padding:16px 0;font-size:17px;font-weight:400;">Como solicito uma avaliação?<span data-ico="" aria-hidden="true" style="flex:none;font-size:24px;font-weight:300;color:#765A2B;transition:transform .2s;">+</span></summary>
+          <p style="margin:0 0 24px;max-width:56ch;font-size:16px;line-height:1.65;color:#4A463F;">Envie uma mensagem pelo WhatsApp <a href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener">(35) 98462-2529</a>. A equipe orienta sobre os próximos passos para o agendamento.</p>
+        </details>
+        <details style="border-bottom:1px solid #DCD5CA;">
+          <summary style="display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:64px;padding:16px 0;font-size:17px;font-weight:400;">Onde é o atendimento?<span data-ico="" aria-hidden="true" style="flex:none;font-size:24px;font-weight:300;color:#765A2B;transition:transform .2s;">+</span></summary>
+          <p style="margin:0 0 24px;max-width:56ch;font-size:16px;line-height:1.65;color:#4A463F;">Na Av. Governador Valadares, 787, em Alpinópolis – MG.</p>
+        </details>
+        <details style="border-bottom:1px solid #DCD5CA;">
+          <summary style="display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:64px;padding:16px 0;font-size:17px;font-weight:400;">Quais tratamentos são oferecidos?<span data-ico="" aria-hidden="true" style="flex:none;font-size:24px;font-weight:300;color:#765A2B;transition:transform .2s;">+</span></summary>
+          <p style="margin:0 0 24px;max-width:56ch;font-size:16px;line-height:1.65;color:#4A463F;">Os tratamentos divulgados são clareamento dental, limpeza e profilaxia, prótese dentária, implantes, aparelhos ortodônticos, tratamento de canal e restaurações.</p>
+        </details>
+        <details style="border-bottom:1px solid #DCD5CA;">
+          <summary style="display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:64px;padding:16px 0;font-size:17px;font-weight:400;">Como sei qual tratamento é indicado para mim?<span data-ico="" aria-hidden="true" style="flex:none;font-size:24px;font-weight:300;color:#765A2B;transition:transform .2s;">+</span></summary>
+          <p style="margin:0 0 24px;max-width:56ch;font-size:16px;line-height:1.65;color:#4A463F;">A indicação depende de uma avaliação individual. Converse com a equipe para agendar a sua.</p>
+        </details>
+        <details style="border-bottom:1px solid #DCD5CA;">
+          <summary style="display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:64px;padding:16px 0;font-size:17px;font-weight:400;">Quais são os valores?<span data-ico="" aria-hidden="true" style="flex:none;font-size:24px;font-weight:300;color:#765A2B;transition:transform .2s;">+</span></summary>
+          <p style="margin:0 0 24px;max-width:56ch;font-size:16px;line-height:1.65;color:#4A463F;">Os valores dependem do planejamento de cada caso. Para mais informações, converse com a equipe pelo WhatsApp.</p>
+        </details>
       </div>
     </div>
   </section>
 
-  <section id="contato" class="fecho banda secao" aria-labelledby="t-fecho">
-    <div class="wrap">
-      <p class="olho" style="color:var(--ouro-claro)">Agendamento</p>
-      <h2 id="t-fecho">Vamos conversar sobre o <em>seu sorriso?</em></h2>
-      <p>Envie uma mensagem pelo WhatsApp e solicite a sua avaliação.</p>
-      <a class="pilula pil-ouro" href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
-      <small>(35) 98462-2529</small>
+  <section id="contato" data-screen-label="07 Encerramento" style="background:#292723;color:#FFFFFF;">
+    <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));align-items:center;">
+      <img src="assets/laissa-03-web.jpg" alt="Retrato da Dra. Laissa com blusa escura e a mão próxima ao rosto" width="1000" height="1333" loading="lazy" decoding="async" style="display:block;width:100%;height:100%;aspect-ratio:4/5;max-height:760px;object-fit:cover;object-position:50% 22%;">
+      <div style="padding:clamp(56px,8vw,112px) clamp(20px,5vw,72px);display:flex;flex-direction:column;gap:28px;align-items:flex-start;">
+        <p style="margin:0;font-size:12px;letter-spacing:0.22em;text-transform:uppercase;color:#D4B67E;">Agendamento</p>
+        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(34px,3.6vw,52px);line-height:1.12;color:#FFFFFF;text-wrap:balance;">Vamos conversar sobre o seu sorriso?</h2>
+        <p style="margin:0;max-width:40ch;font-size:18px;line-height:1.6;font-weight:300;color:#EDE8E0;">Envie uma mensagem pelo WhatsApp e solicite a sua avaliação.</p>
+        <a href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 30px;background:#B08B47;color:#1C1A17;text-decoration:none;font-size:15px;font-weight:400;letter-spacing:0.05em;border-radius:2px;transition:background .2s;" class="hv5">Agendar pelo WhatsApp</a>
+        <p style="margin:0;font-size:15px;color:#EDE8E0;">(35) 98462-2529</p>
+      </div>
     </div>
   </section>
 </main>
 
-<footer>
-  <div class="wrap">
-    <div class="rod-grade">
-      <img class="logo" src="assets/marca-laissa.jpg" alt="Marca Dra. Laissa Ribeiro de Paula, cirurgiã-dentista" width="855" height="480" loading="lazy" decoding="async">
-      <div>
-        <p class="olho">Dra. Laissa Ribeiro de Paula</p>
+<footer data-screen-label="08 Rodapé" style="background:#FFFFFF;padding:clamp(56px,7vw,88px) clamp(20px,5vw,72px) 32px;">
+  <div style="max-width:1136px;margin:0 auto;display:flex;flex-direction:column;gap:48px;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:40px;align-items:start;">
+      <div style="width:100%;max-width:300px;overflow:hidden;"><img src="assets/marca-laissa.jpg" alt="Marca Dra. Laissa Ribeiro de Paula, cirurgiã-dentista" width="855" height="480" loading="lazy" decoding="async" style="display:block;width:calc(100% + 8px);max-width:none;height:auto;margin-left:-6px;mix-blend-mode:multiply;"></div>
+      <div style="display:flex;flex-direction:column;gap:8px;font-size:15px;line-height:1.6;">
+        <p style="margin:0 0 4px;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#765A2B;">Dra. Laissa Ribeiro de Paula</p>
         <span>Cirurgiã-dentista</span>
         <span>Av. Governador Valadares, 787<br>Alpinópolis – MG</span>
+        
       </div>
-      <div>
-        <p class="olho">Contato</p>
-        <a href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener">WhatsApp (35) 98462-2529</a>
-        <a href="https://www.instagram.com/laissadepaula/" target="_blank" rel="noopener">Instagram @laissadepaula</a>
+      <div style="display:flex;flex-direction:column;gap:4px;font-size:15px;line-height:1.6;">
+        <p style="margin:0 0 4px;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#765A2B;">Contato</p>
+        <a href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener" style="color:#292723;display:inline-flex;align-items:center;min-height:40px;" class="hv1">WhatsApp (35) 98462-2529</a>
+        <a href="https://www.instagram.com/laissadepaula/" target="_blank" rel="noopener" style="color:#292723;display:inline-flex;align-items:center;min-height:40px;" class="hv1">Instagram @laissadepaula</a>
       </div>
     </div>
-    <div class="rod-base">
+    <div style="border-top:1px solid #DCD5CA;padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 32px;font-size:13px;line-height:1.6;color:#5C564D;">
       <span>Este site não possui formulários. O contato é feito diretamente pelo WhatsApp.</span>
-      <span>Fotografias: <a href="https://www.instagram.com/fotospormari_/" target="_blank" rel="noopener">@fotospormari_</a> · © 2026</span>
+      <span>Fotografias: <a href="https://www.instagram.com/fotospormari_/" target="_blank" rel="noopener" style="color:#5C564D;">@fotospormari_</a> · © 2026</span>
     </div>
-    <div class="espaco-barra so-celular" aria-hidden="true"></div>
+    <div class="so-celular" aria-hidden="true" style="height:64px;"></div>
   </div>
 </footer>
 
-<div class="barra so-celular">
-  <a class="pilula pil-escura" href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener">Agendar avaliação pelo WhatsApp</a>
-</div>
-
+<div class="so-celular" style="position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,0.97);border-top:1px solid #DCD5CA;">
+    <a href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;min-height:50px;background:#765A2B;color:#FFFFFF;text-decoration:none;font-size:15px;font-weight:400;letter-spacing:0.05em;border-radius:2px;">Agendar avaliação pelo WhatsApp</a>
+  </div>
 <script>
 (function(){var b=document.getElementById('menu-btn'),m=document.getElementById('menu-movel');
 function set(o){m.hidden=!o;b.setAttribute('aria-expanded',String(o));b.textContent=o?'Fechar':'Menu';}
