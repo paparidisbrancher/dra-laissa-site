@@ -43,7 +43,18 @@ details[open]>summary [data-ico]{transform:rotate(45deg)}
 [hidden]{display:none!important}
 @media (max-width:879px){.so-largo{display:none!important}}
 @media (min-width:880px){.so-celular{display:none!important}.trat-intro{position:sticky;top:116px}}
-@media (hover:hover){.hv1:hover{color:#765A2B!important}.hv2:hover{background:#765A2B!important;color:#FFFFFF!important}.hv3:hover{background:#5E4721!important;color:#FFFFFF!important}.hv4:hover{transform:scale(1.03)!important}.hv5:hover{color:#292723!important}.hv6:hover{padding-left:10px!important;color:#765A2B!important}.hv7:hover{background:#C49D58!important;color:#1C1A17!important}}
+::selection{background:#EDE3D1;color:#292723}
+a,button,summary{-webkit-tap-highlight-color:transparent}
+.btn{transition:background-color .2s ease,transform .16s cubic-bezier(.23,1,.32,1)!important}
+.btn:active{transform:scale(.97)}
+:root{interpolate-size:allow-keywords}
+details::details-content{block-size:0;overflow:hidden;transition:block-size .3s cubic-bezier(.23,1,.32,1),content-visibility .3s allow-discrete}
+details[open]::details-content{block-size:auto}
+#tratamentos summary>span:first-child,#tratamentos summary h3{transition:transform .35s cubic-bezier(.23,1,.32,1)}
+@media (max-width:479px){.nome-marca{font-size:18px!important}}
+@media (min-width:390px) and (max-width:479px){.nome-marca{white-space:nowrap}}
+@media (prefers-reduced-motion:reduce){details::details-content{transition:none}.btn:active{transform:none}}
+@media (hover:hover) and (pointer:fine){.hv1:hover{color:#765A2B!important}.hv2:hover{background:#765A2B!important;color:#FFFFFF!important}.hv3:hover{background:#5E4721!important;color:#FFFFFF!important}.hv4:hover{transform:scale(1.03)!important}.hv5:hover{color:#292723!important}.hv6:hover{background:#C49D58!important;color:#1C1A17!important}#tratamentos summary:hover>span:first-child,#tratamentos summary:hover h3{transform:translateX(10px)}}
 </style>
 </head>
 <body>
@@ -55,7 +66,7 @@ details[open]>summary [data-ico]{transform:rotate(45deg)}
         <img src="assets/marca-laissa.webp" alt="" width="855" height="480" style="position:absolute;left:-54px;top:-5px;width:159px;height:89px;max-width:none;mix-blend-mode:multiply;">
       </span>
       <span style="display:flex;flex-direction:column;gap:4px;">
-        <span style="font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:400;line-height:1;letter-spacing:0.01em;">Dra. Laissa Ribeiro de Paula</span>
+        <span class="nome-marca" style="font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:400;line-height:1;letter-spacing:0.01em;">Dra. Laissa Ribeiro de Paula</span>
         <span style="font-size:11px;line-height:1;letter-spacing:0.22em;text-transform:uppercase;color:#765A2B;">Cirurgiã-dentista</span>
       </span>
     </a>
@@ -73,7 +84,7 @@ details[open]>summary [data-ico]{transform:rotate(45deg)}
       <a href="#sobre" style="color:#292723;text-decoration:none;font-family:'Cormorant Garamond',serif;font-size:24px;padding:14px 0;border-bottom:1px solid #EAE4DA;">A doutora</a>
       <a href="#tratamentos" style="color:#292723;text-decoration:none;font-family:'Cormorant Garamond',serif;font-size:24px;padding:14px 0;border-bottom:1px solid #EAE4DA;">Tratamentos</a>
       <a href="#atendimento" style="color:#292723;text-decoration:none;font-family:'Cormorant Garamond',serif;font-size:24px;padding:14px 0;border-bottom:1px solid #EAE4DA;">Atendimento</a>
-      <a href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener" style="margin-top:20px;display:flex;align-items:center;justify-content:center;min-height:52px;background:#765A2B;color:#FFFFFF;text-decoration:none;font-size:15px;letter-spacing:0.05em;border-radius:2px;">Agendar avaliação</a>
+      <a class="btn" href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener" style="margin-top:20px;display:flex;align-items:center;justify-content:center;min-height:52px;background:#765A2B;color:#FFFFFF;text-decoration:none;font-size:15px;letter-spacing:0.05em;border-radius:2px;">Agendar avaliação</a>
     </nav>
 </header>
 
@@ -87,7 +98,7 @@ details[open]>summary [data-ico]{transform:rotate(45deg)}
         </h1>
         <p style="margin:0;max-width:40ch;font-size:clamp(17px,1.4vw,19px);line-height:1.65;font-weight:300;color:#292723;text-wrap:pretty;">Atendimento odontológico com escuta, cuidado e planejamento para cada paciente.</p>
         <div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px 32px;margin-top:4px;">
-          <a href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 30px;background:#765A2B;color:#FFFFFF;text-decoration:none;font-size:15px;letter-spacing:0.05em;border-radius:2px;transition:background .25s;" class="hv3">Agendar uma avaliação</a>
+          <a href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 30px;background:#765A2B;color:#FFFFFF;text-decoration:none;font-size:15px;letter-spacing:0.05em;border-radius:2px;transition:background .25s;" class="btn hv3">Agendar uma avaliação</a>
           <a href="#tratamentos" style="display:inline-flex;align-items:center;min-height:44px;color:#292723;font-size:15px;letter-spacing:0.05em;text-decoration:underline;text-decoration-color:#B08B47;text-underline-offset:8px;" class="hv1">Conheça os tratamentos</a>
         </div>
       </div>
@@ -139,31 +150,31 @@ details[open]>summary [data-ico]{transform:rotate(45deg)}
       </div>
       <div data-reveal="" style="flex:1.6 1 420px;min-width:0;border-top:1px solid #DCD5CA;">
         <details style="border-bottom:1px solid #DCD5CA;">
-          <summary style="display:grid;grid-template-columns:40px minmax(0,1fr) 24px;align-items:center;gap:16px;min-height:72px;padding:14px 0;color:#292723;transition:padding .35s cubic-bezier(.2,.7,.2,1),color .35s;" class="hv6"><span aria-hidden="true" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#B08B47;">01</span><h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(24px,2.3vw,29px);line-height:1.15;color:inherit;">Clareamento dental</h3><span data-ico="" aria-hidden="true" style="font-size:22px;font-weight:300;color:#765A2B;text-align:center;transition:transform .3s;">+</span></summary>
+          <summary style="display:grid;grid-template-columns:40px minmax(0,1fr) 24px;align-items:center;gap:16px;min-height:72px;padding:14px 0;color:#292723;transition:color .35s;" class="hv1"><span aria-hidden="true" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#B08B47;">01</span><h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(24px,2.3vw,29px);line-height:1.15;color:inherit;">Clareamento dental</h3><span data-ico="" aria-hidden="true" style="font-size:22px;font-weight:300;color:#765A2B;text-align:center;transition:transform .3s;">+</span></summary>
           <p style="margin:-2px 0 28px 56px;max-width:46ch;font-size:16px;line-height:1.65;color:#4A463F;">Procedimento para clarear a tonalidade dos dentes, realizado após avaliação da saúde bucal e das expectativas de cada paciente.</p>
         </details>
         <details style="border-bottom:1px solid #DCD5CA;">
-          <summary style="display:grid;grid-template-columns:40px minmax(0,1fr) 24px;align-items:center;gap:16px;min-height:72px;padding:14px 0;color:#292723;transition:padding .35s cubic-bezier(.2,.7,.2,1),color .35s;" class="hv6"><span aria-hidden="true" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#B08B47;">02</span><h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(24px,2.3vw,29px);line-height:1.15;color:inherit;">Limpeza e profilaxia</h3><span data-ico="" aria-hidden="true" style="font-size:22px;font-weight:300;color:#765A2B;text-align:center;transition:transform .3s;">+</span></summary>
+          <summary style="display:grid;grid-template-columns:40px minmax(0,1fr) 24px;align-items:center;gap:16px;min-height:72px;padding:14px 0;color:#292723;transition:color .35s;" class="hv1"><span aria-hidden="true" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#B08B47;">02</span><h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(24px,2.3vw,29px);line-height:1.15;color:inherit;">Limpeza e profilaxia</h3><span data-ico="" aria-hidden="true" style="font-size:22px;font-weight:300;color:#765A2B;text-align:center;transition:transform .3s;">+</span></summary>
           <p style="margin:-2px 0 28px 56px;max-width:46ch;font-size:16px;line-height:1.65;color:#4A463F;">Remoção de placa bacteriana e tártaro, com orientações de higiene para a prevenção no dia a dia.</p>
         </details>
         <details style="border-bottom:1px solid #DCD5CA;">
-          <summary style="display:grid;grid-template-columns:40px minmax(0,1fr) 24px;align-items:center;gap:16px;min-height:72px;padding:14px 0;color:#292723;transition:padding .35s cubic-bezier(.2,.7,.2,1),color .35s;" class="hv6"><span aria-hidden="true" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#B08B47;">03</span><h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(24px,2.3vw,29px);line-height:1.15;color:inherit;">Prótese dentária</h3><span data-ico="" aria-hidden="true" style="font-size:22px;font-weight:300;color:#765A2B;text-align:center;transition:transform .3s;">+</span></summary>
+          <summary style="display:grid;grid-template-columns:40px minmax(0,1fr) 24px;align-items:center;gap:16px;min-height:72px;padding:14px 0;color:#292723;transition:color .35s;" class="hv1"><span aria-hidden="true" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#B08B47;">03</span><h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(24px,2.3vw,29px);line-height:1.15;color:inherit;">Prótese dentária</h3><span data-ico="" aria-hidden="true" style="font-size:22px;font-weight:300;color:#765A2B;text-align:center;transition:transform .3s;">+</span></summary>
           <p style="margin:-2px 0 28px 56px;max-width:46ch;font-size:16px;line-height:1.65;color:#4A463F;">Reposição de dentes ausentes ou muito desgastados, buscando recuperar a função mastigatória e o conforto.</p>
         </details>
         <details style="border-bottom:1px solid #DCD5CA;">
-          <summary style="display:grid;grid-template-columns:40px minmax(0,1fr) 24px;align-items:center;gap:16px;min-height:72px;padding:14px 0;color:#292723;transition:padding .35s cubic-bezier(.2,.7,.2,1),color .35s;" class="hv6"><span aria-hidden="true" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#B08B47;">04</span><h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(24px,2.3vw,29px);line-height:1.15;color:inherit;">Implantes</h3><span data-ico="" aria-hidden="true" style="font-size:22px;font-weight:300;color:#765A2B;text-align:center;transition:transform .3s;">+</span></summary>
+          <summary style="display:grid;grid-template-columns:40px minmax(0,1fr) 24px;align-items:center;gap:16px;min-height:72px;padding:14px 0;color:#292723;transition:color .35s;" class="hv1"><span aria-hidden="true" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#B08B47;">04</span><h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(24px,2.3vw,29px);line-height:1.15;color:inherit;">Implantes</h3><span data-ico="" aria-hidden="true" style="font-size:22px;font-weight:300;color:#765A2B;text-align:center;transition:transform .3s;">+</span></summary>
           <p style="margin:-2px 0 28px 56px;max-width:46ch;font-size:16px;line-height:1.65;color:#4A463F;">Alternativa para substituir dentes perdidos, com indicação definida a partir de avaliação clínica e exames.</p>
         </details>
         <details style="border-bottom:1px solid #DCD5CA;">
-          <summary style="display:grid;grid-template-columns:40px minmax(0,1fr) 24px;align-items:center;gap:16px;min-height:72px;padding:14px 0;color:#292723;transition:padding .35s cubic-bezier(.2,.7,.2,1),color .35s;" class="hv6"><span aria-hidden="true" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#B08B47;">05</span><h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(24px,2.3vw,29px);line-height:1.15;color:inherit;">Aparelhos ortodônticos</h3><span data-ico="" aria-hidden="true" style="font-size:22px;font-weight:300;color:#765A2B;text-align:center;transition:transform .3s;">+</span></summary>
+          <summary style="display:grid;grid-template-columns:40px minmax(0,1fr) 24px;align-items:center;gap:16px;min-height:72px;padding:14px 0;color:#292723;transition:color .35s;" class="hv1"><span aria-hidden="true" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#B08B47;">05</span><h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(24px,2.3vw,29px);line-height:1.15;color:inherit;">Aparelhos ortodônticos</h3><span data-ico="" aria-hidden="true" style="font-size:22px;font-weight:300;color:#765A2B;text-align:center;transition:transform .3s;">+</span></summary>
           <p style="margin:-2px 0 28px 56px;max-width:46ch;font-size:16px;line-height:1.65;color:#4A463F;">Correção do posicionamento dos dentes e da mordida, com acompanhamento periódico ao longo do tratamento.</p>
         </details>
         <details style="border-bottom:1px solid #DCD5CA;">
-          <summary style="display:grid;grid-template-columns:40px minmax(0,1fr) 24px;align-items:center;gap:16px;min-height:72px;padding:14px 0;color:#292723;transition:padding .35s cubic-bezier(.2,.7,.2,1),color .35s;" class="hv6"><span aria-hidden="true" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#B08B47;">06</span><h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(24px,2.3vw,29px);line-height:1.15;color:inherit;">Tratamento de canal</h3><span data-ico="" aria-hidden="true" style="font-size:22px;font-weight:300;color:#765A2B;text-align:center;transition:transform .3s;">+</span></summary>
+          <summary style="display:grid;grid-template-columns:40px minmax(0,1fr) 24px;align-items:center;gap:16px;min-height:72px;padding:14px 0;color:#292723;transition:color .35s;" class="hv1"><span aria-hidden="true" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#B08B47;">06</span><h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(24px,2.3vw,29px);line-height:1.15;color:inherit;">Tratamento de canal</h3><span data-ico="" aria-hidden="true" style="font-size:22px;font-weight:300;color:#765A2B;text-align:center;transition:transform .3s;">+</span></summary>
           <p style="margin:-2px 0 28px 56px;max-width:46ch;font-size:16px;line-height:1.65;color:#4A463F;">Tratamento da parte interna do dente quando a polpa está comprometida, com o objetivo de preservar o dente natural.</p>
         </details>
         <details style="border-bottom:1px solid #DCD5CA;">
-          <summary style="display:grid;grid-template-columns:40px minmax(0,1fr) 24px;align-items:center;gap:16px;min-height:72px;padding:14px 0;color:#292723;transition:padding .35s cubic-bezier(.2,.7,.2,1),color .35s;" class="hv6"><span aria-hidden="true" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#B08B47;">07</span><h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(24px,2.3vw,29px);line-height:1.15;color:inherit;">Restaurações</h3><span data-ico="" aria-hidden="true" style="font-size:22px;font-weight:300;color:#765A2B;text-align:center;transition:transform .3s;">+</span></summary>
+          <summary style="display:grid;grid-template-columns:40px minmax(0,1fr) 24px;align-items:center;gap:16px;min-height:72px;padding:14px 0;color:#292723;transition:color .35s;" class="hv1"><span aria-hidden="true" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#B08B47;">07</span><h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(24px,2.3vw,29px);line-height:1.15;color:inherit;">Restaurações</h3><span data-ico="" aria-hidden="true" style="font-size:22px;font-weight:300;color:#765A2B;text-align:center;transition:transform .3s;">+</span></summary>
           <p style="margin:-2px 0 28px 56px;max-width:46ch;font-size:16px;line-height:1.65;color:#4A463F;">Reparo de dentes afetados por cárie, fraturas ou desgaste, recuperando forma e função.</p>
         </details>
       </div>
@@ -181,7 +192,7 @@ details[open]>summary [data-ico]{transform:rotate(45deg)}
         <li data-reveal="120" style="border-top:1px solid #B08B47;padding-top:28px;display:flex;flex-direction:column;gap:14px;"><span aria-hidden="true" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:44px;line-height:1;color:#B08B47;">2</span><h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:26px;line-height:1.15;">Consulta de avaliação</h3><p style="margin:0;font-size:16px;line-height:1.65;color:#4A463F;max-width:34ch;">A Dra. Laissa ouve o que você procura e avalia a sua saúde bucal.</p></li>
         <li data-reveal="240" style="border-top:1px solid #B08B47;padding-top:28px;display:flex;flex-direction:column;gap:14px;"><span aria-hidden="true" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:44px;line-height:1;color:#B08B47;">3</span><h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:26px;line-height:1.15;">Planejamento</h3><p style="margin:0;font-size:16px;line-height:1.65;color:#4A463F;max-width:34ch;">Com base na avaliação, vocês conversam sobre as possibilidades de tratamento e as próximas etapas.</p></li>
       </ol>
-      <div><a href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 30px;background:#765A2B;color:#FFFFFF;text-decoration:none;font-size:15px;letter-spacing:0.05em;border-radius:2px;transition:background .25s;" class="hv3">Conversar pelo WhatsApp</a></div>
+      <div><a href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 30px;background:#765A2B;color:#FFFFFF;text-decoration:none;font-size:15px;letter-spacing:0.05em;border-radius:2px;transition:background .25s;" class="btn hv3">Conversar pelo WhatsApp</a></div>
     </div>
   </section>
 
@@ -253,8 +264,8 @@ details[open]>summary [data-ico]{transform:rotate(45deg)}
         <p style="margin:0;font-size:12px;letter-spacing:0.22em;text-transform:uppercase;color:#D4B67E;">Agendamento</p>
         <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(34px,3.6vw,52px);line-height:1.12;color:#FFFFFF;text-wrap:balance;">Vamos conversar sobre o seu <em style="font-style:italic;color:#D4B67E;">sorriso</em>?</h2>
         <p style="margin:0;max-width:40ch;font-size:18px;line-height:1.6;font-weight:300;color:#EDE8E0;">Envie uma mensagem pelo WhatsApp e solicite a sua avaliação.</p>
-        <a href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 30px;background:#B08B47;color:#1C1A17;text-decoration:none;font-size:15px;letter-spacing:0.05em;border-radius:2px;transition:background .25s;" class="hv7">Agendar pelo WhatsApp</a>
-        <p style="margin:0;font-size:15px;color:#EDE8E0;">(35) 98462-2529</p>
+        <a href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 30px;background:#B08B47;color:#1C1A17;text-decoration:none;font-size:15px;letter-spacing:0.05em;border-radius:2px;transition:background .25s;" class="btn hv6">Agendar pelo WhatsApp</a>
+        <a href="tel:+5535984622529" style="font-size:15px;color:#EDE8E0;display:inline-flex;align-items:center;min-height:44px;">(35) 98462-2529</a>
       </div>
     </div>
   </section>
@@ -292,7 +303,7 @@ details[open]>summary [data-ico]{transform:rotate(45deg)}
 </footer>
 
 <div class="so-celular" style="position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,0.97);border-top:1px solid #EAE4DA;">
-    <a href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;min-height:50px;background:#765A2B;color:#FFFFFF;text-decoration:none;font-size:15px;letter-spacing:0.05em;border-radius:2px;">Agendar avaliação pelo WhatsApp</a>
+    <a class="btn" href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;min-height:50px;background:#765A2B;color:#FFFFFF;text-decoration:none;font-size:15px;letter-spacing:0.05em;border-radius:2px;">Agendar avaliação pelo WhatsApp</a>
   </div>
 <script>
 (function(){var b=document.getElementById('menu-btn'),m=document.getElementById('menu-movel');
@@ -300,6 +311,7 @@ function set(o){m.hidden=!o;b.setAttribute('aria-expanded',String(o));b.textCont
 b.addEventListener('click',function(){set(m.hidden);});
 m.addEventListener('click',function(e){if(e.target.closest('a'))set(false);});
 addEventListener('resize',function(){if(innerWidth>=880&&!m.hidden)set(false);});
+addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden){set(false);b.focus();}});
 if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
 var ease='cubic-bezier(.2,.7,.2,1)',vh=innerHeight;
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;
