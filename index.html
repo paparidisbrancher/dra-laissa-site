@@ -55,6 +55,30 @@ details[open]::details-content{block-size:auto}
 @media (min-width:390px) and (max-width:479px){.nome-marca{white-space:nowrap}}
 @media (prefers-reduced-motion:reduce){details::details-content{transition:none}.btn:active{transform:none}}
 @media (hover:hover) and (pointer:fine){.hv1:hover{color:#765A2B!important}.hv2:hover{background:#765A2B!important;color:#FFFFFF!important}.hv3:hover{background:#5E4721!important;color:#FFFFFF!important}.hv4:hover{transform:scale(1.03)!important}.hv5:hover{color:#292723!important}.hv6:hover{background:#C49D58!important;color:#1C1A17!important}#tratamentos summary:hover>span:first-child,#tratamentos summary:hover h3{transform:translateX(10px)}}
+@media (max-width:899px){
+  #inicio{--hero-gutter:clamp(20px,5vw,72px);background:#292723!important;color:#FFFFFF}
+  #inicio>div{display:flex!important;flex-direction:column;min-height:calc(100svh - 77px)!important;padding-inline:var(--hero-gutter)}
+  #inicio>div>div:first-child{position:relative;z-index:1;margin-top:-132px;padding:0 0 24px!important;gap:14px!important}
+  #inicio h1{gap:12px!important}
+  #inicio h1>span:first-child{font-size:11px!important;letter-spacing:.16em!important;color:#D4B67E!important}
+  #inicio h1>span:last-child{font-size:clamp(2.3rem,9.4vw,3.2rem)!important;color:#FFFFFF!important}
+  #inicio h1 em{color:#D4B67E!important}
+  #inicio p{font-size:16px!important;line-height:1.5!important;color:#EDE8E0!important}
+  #inicio a[href="#tratamentos"]{color:#FFFFFF!important}
+  #inicio :focus-visible{outline-color:#FFFFFF}
+  #inicio>div>div:last-child{order:-1;flex:1;min-height:0!important;margin-inline:calc(-1 * var(--hero-gutter));padding:0;background:#292723!important}
+  #inicio>div>div:last-child::after{content:"";position:absolute;inset:auto 0 0;height:50%;background:linear-gradient(180deg,transparent,#292723E6 65%,#292723);pointer-events:none}
+  #inicio img{min-height:133vw;object-position:50% 20%!important}
+}
+@media (max-width:879px){
+  /* Header: 77px. Booking bar: 50px button + 20px padding + 1px border. */
+  #inicio>div{min-height:calc(100svh - 77px - 71px - env(safe-area-inset-bottom))!important}
+  #inicio a[href*="wa.me"]{display:none!important}
+}
+@media (max-width:899px) and (prefers-reduced-motion:no-preference){
+  #inicio>div>div:first-child{animation:hero-entry .6s ease-out both}
+  @keyframes hero-entry{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+}
 </style>
 </head>
 <body>
