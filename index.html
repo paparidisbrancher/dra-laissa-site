@@ -6,7 +6,8 @@
 <title>Dra. Laissa Ribeiro de Paula | Dentista em Alpinópolis – MG</title>
 <meta name="description" content="Dra. Laissa Ribeiro de Paula, cirurgiã-dentista em Alpinópolis – MG. Clareamento, limpeza, prótese, implantes, aparelho ortodôntico, canal e restaurações. Agende uma avaliação pelo WhatsApp.">
 <link rel="canonical" href="https://paparidisbrancher.github.io/dra-laissa-site/">
-<meta name="robots" content="index, follow, max-image-preview:large">
+<!-- Em aprovação: trocar por "index, follow, max-image-preview:large" (e Allow: / no robots.txt) na publicação final. -->
+<meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="geo.region" content="BR-MG">
 <meta name="geo.placename" content="Alpinópolis">
@@ -36,6 +37,8 @@ img{max-width:100%}
 a{color:#765A2B;text-underline-offset:4px}
 a:hover{color:#292723}
 :focus-visible{outline:2px solid #765A2B;outline-offset:3px}
+.pular{position:absolute;left:12px;top:-60px;z-index:50;background:#292723;color:#FFFFFF;padding:12px 18px;border-radius:2px;font-size:14px;text-decoration:none;transition:top .2s ease}
+.pular:focus{top:12px;color:#FFFFFF}
 summary{list-style:none;cursor:pointer}
 summary::-webkit-details-marker{display:none}
 details[open]>summary [data-ico]{transform:rotate(45deg)}
@@ -82,6 +85,7 @@ details[open]::details-content{block-size:auto}
 </style>
 </head>
 <body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
 
 <header style="position:sticky;top:0;z-index:20;background:rgba(255,255,255,0.96);border-bottom:1px solid #EAE4DA;">
   <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,48px);min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
@@ -112,7 +116,7 @@ details[open]::details-content{block-size:auto}
     </nav>
 </header>
 
-<main>
+<main id="conteudo">
   <section id="inicio" data-screen-label="01 Abertura" style="background:#FFFFFF;">
     <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));min-height:min(calc(100svh - 77px),720px);">
       <div style="padding:clamp(36px,5vw,72px) clamp(20px,5vw,72px);display:flex;flex-direction:column;justify-content:center;gap:24px;">
@@ -326,16 +330,21 @@ details[open]::details-content{block-size:auto}
   </div>
 </footer>
 
-<div class="so-celular" style="position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,0.97);border-top:1px solid #EAE4DA;">
+<div id="barra-wa" class="so-celular" style="position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,0.97);border-top:1px solid #EAE4DA;transition:transform .25s ease,opacity .25s ease;">
     <a class="btn" href="https://wa.me/5535984622529?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20para%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Laissa." target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;min-height:50px;background:#765A2B;color:#FFFFFF;text-decoration:none;font-size:15px;letter-spacing:0.05em;border-radius:2px;">Agendar avaliação pelo WhatsApp</a>
   </div>
 <script>
-(function(){var b=document.getElementById('menu-btn'),m=document.getElementById('menu-movel');
+(function(){var b=document.getElementById('menu-btn'),m=document.getElementById('menu-movel'),barra=document.getElementById('barra-wa'),contato=document.getElementById('contato');
 function set(o){m.hidden=!o;b.setAttribute('aria-expanded',String(o));b.textContent=o?'Fechar':'Menu';}
 b.addEventListener('click',function(){set(m.hidden);});
 m.addEventListener('click',function(e){if(e.target.closest('a'))set(false);});
+document.addEventListener('click',function(e){if(!m.hidden&&!e.target.closest('header'))set(false);});
 addEventListener('resize',function(){if(innerWidth>=880&&!m.hidden)set(false);});
 addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden){set(false);b.focus();}});
+if('IntersectionObserver' in window&&barra&&contato){
+var ioBarra=new IntersectionObserver(function(es){es.forEach(function(e){barra.style.opacity=e.isIntersecting?'0':'1';barra.style.pointerEvents=e.isIntersecting?'none':'auto';barra.style.transform=e.isIntersecting?'translateY(100%)':'none';});},{threshold:0.15});
+ioBarra.observe(contato);
+}
 if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
 var ease='cubic-bezier(.2,.7,.2,1)',vh=innerHeight;
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;
